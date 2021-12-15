@@ -99,7 +99,7 @@ content:
         caption: 2020.1 - 2021.5
         teaser: images/chart-navigator.PNG
         description: | # this will include new lines to allow paragraphs
-            **Zhang T\*, Feng HZ\*, et al. ChartNavigator: An Interactive Pattern Identification and Annotation Framework for Charts (\*First Co-Author, Accepted at IEEE TKDE, CCF-A).** [[PDF]](https://ieeexplore.ieee.org/document/9472937/) [[Email Me For Code]](fenghz@zju.edu.cn)
+            **Zhang T\*, Feng HZ\*, et al. ChartNavigator: An Interactive Pattern Identification and Annotation Framework for Charts (\*First Co-Author, Accepted at IEEE TKDE, CCF-A).** [[PDF]](https://ieeexplore.ieee.org/document/9472937/) [[Email Me For Code]]()
 
             Identifying important patterns in charts **require a large number of labeled data instances**. We propose ChartNavigator, an interactive pattern identification and annotation framework for unlabeled visualization charts. ChartNavigator design a VAE-based deep factor model to explore the latent space of charts and implement a visual interface to **support efficient pattern identification and annotation**.
             ```
