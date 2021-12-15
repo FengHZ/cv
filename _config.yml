@@ -79,36 +79,63 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Semi-supervised Representation Learning
+        title: Semi-supervised Disentangling VAE
         caption: 2020.1 - 2020.9
+        teaser: images/SHOT-VAE.png
         description: | # this will include new lines to allow paragraphs
-            Semi-supervised variational autoencoder can reduce the label cost by training classifiers with multiple unlabeled data and a small fraction of labeled data. However, it encounters the challenge that good ELBO values do not always imply accurate inference results. We propose SHOT-VAE to address this problem. The SHOT-VAE achieves good performance with 25.30% error on CIFAR-100 and 6.11% on CIFAR-10. 
-            
-            **Feng HZ, Kong K, et al. SHOT-VAE: Semi-supervised Deep Generative Models With Label-aware ELBO Approximations (Accepted at AAAI 2021).** [[PDF]](https://arxiv.org/pdf/2011.10684.pdf) [[Code]](https://github.com/FengHZ/AAAI2021-260)
-      
+            **Feng HZ, Kong K, et al. SHOT-VAE: Semi-supervised Deep Generative Models With Label-aware ELBO Approximations (Accepted at AAAI 2021, CCF-A).** [[PDF]](https://arxiv.org/pdf/2011.10684.pdf) [[Code]](https://github.com/FengHZ/AAAI2021-260)
+
+            Semi-supervised VAEs can reduce the label cost by training classifiers with multiple unlabeled data and a small fraction of labeled data. However, it encounters the challenge that **good ELBO values do not always imply good results**. We propose SHOT-VAE to address this problem. The SHOT-VAE achieves good performance with 25.30% error on CIFAR-100 and 6.11% on CIFAR-10.
+
+            ```
+            @article{feng21, 
+                    title={SHOT-VAE: Semi-supervised Deep Generative Models With Label-aware ELBO Approximations}, 
+                    volume={35}, number={8}, journal={Proceedings of the AAAI Conference on Artificial Intelligence}, 
+                    author={Feng, Hao-Zhe and Kong, Kezhi and Chen, Minghao and Zhang, Tianye and Zhu, Minfeng and Chen, Wei}, 
+                    year={2021}, month={May}, pages={7413-7421}}
+            ``` 
       - layout: left
         title: Representation Learning for Basic Visualization Charts
         caption: 2020.1 - 2021.5
+        teaser: images/chart-navigator.PNG
         description: | # this will include new lines to allow paragraphs
-            Patterns in charts refer to interesting visual features or forms. Existing Methods for identifying patterns in charts require a large number of labeled data instances, making it intractable without user supervision. We propose ChartNavigator, an interactive pattern identification and annotation framework for unlabeled visualization charts. ChartNavigator leverages a novel chart-sensitive deep factor model to map patterns into a low-dimensional factor representation space and facilitates rich analysis with the derived representations. We design and implement a visual interface to support efficient identification and annotation of potential patterns in charts. Evaluations with multiple datasets show that our approach outperforms the baseline models in identifying and annotating patterns.
-            
-            **Zhang T\*, Feng HZ\*, et al. ChartNavigator: An Interactive Pattern Identification and Annotation Framework for Charts (\*First Co-Author, Accepted at IEEE TKDE, CCF-A).** [[PDF]](https://ieeexplore.ieee.org/document/9472937/)
-       
+            **Zhang T\*, Feng HZ\*, et al. ChartNavigator: An Interactive Pattern Identification and Annotation Framework for Charts (\*First Co-Author, Accepted at IEEE TKDE, CCF-A).** [[PDF]](https://ieeexplore.ieee.org/document/9472937/) [[Email Me For Code]](fenghz@zju.edu.cn)
+
+            Identifying important patterns in charts **require a large number of labeled data instances**. We propose ChartNavigator, an interactive pattern identification and annotation framework for unlabeled visualization charts. ChartNavigator design a VAE-based deep factor model to explore the latent space of charts and implement a visual interface to **support efficient pattern identification and annotation**.
+            ```
+            @article{ChartNavigator,
+                    author={Zhang, Tianye and Feng, Haozhe and Chen, Wei and Chen, Zexian and Zheng, Wenting and Luo, Xiao-Nan and Huang, Wenqi and Tung, Anthony K. H.}, journal={IEEE Transactions on Knowledge and Data Engineering}, 
+                    title={ChartNavigator: An Interactive Pattern Identification and Annotation Framework for Charts}, 
+                    year={2021}, pages={1-1}, doi={10.1109/TKDE.2021.3094236}}
+            ```
       - layout: left
         title: Unsupervised Multi-source Federated Transfer Learning
         caption: 2020.5 - 2021.5
-        teaser: https://jackie-image.oss-cn-hangzhou.aliyuncs.com/%E5%9B%BE%E7%89%871.png
+        teaser: images/kd3a.png
         description: | # this will include new lines to allow paragraphs
-            Conventional unsupervised multi-source domain adaptation (UMDA) methods assume all source domains can be accessed directly. However, this assumption neglects the privacy-preserving policy, where all the data and computations must be kept decentralized. To address the decentralized problem, we propose a privacy-preserving UMDA paradigm named Knowledge Distillation based Decentralized Domain Adaptation (KD3A), which performs domain adaptation through the knowledge distillation on models from different source domains. The extensive experiments show that KD3A significantly outperforms state-of-the-art UMDA approaches. Moreover, the KD3A is robust to the negative transfer and brings a 100× reduction of communication cost compared with other decentralized UMDA methods.            
-            **FengHZ, You Z, et al. KD3A: Unsupervised Multi-Source Decentralized Domain Adaptation via Knowledge Distillation. (Accepted at ICML 2021).** [[PDF]](https://arxiv.org/pdf/2011.09757.pdf) [[Code]](https://github.com/FengHZ/KD3A)
-      
+            **FengHZ, You Z, et al. KD3A: Unsupervised Multi-Source Decentralized Domain Adaptation via Knowledge Distillation. (Accepted at ICML 2021, CCF-A).** [[PDF]](https://arxiv.org/pdf/2011.09757.pdf) [[Code]](https://github.com/FengHZ/KD3A)
+
+            Conventional multi-source domain adaptation methods assume **all source domains can be accessed directly**. However, this assumption neglects the **privacy-preserving policy**, where all the data and computations must be kept decentralized. To address the decentralized problem, we propose a privacy-preserving UMDA paradigm named KD3A, which performs domain adaptation through the knowledge distillation. Experiments show that KD3A achieves the **SOTA 51.1% accuracy** on DomainNet. Moreover, KD3A is **robust to the negative transfer** and brings a **100× reduction of communication cost**.    
+
+            ```
+            @inproceedings{pmlr-v139-feng21f,
+              title = {KD3A: Unsupervised Multi-Source Decentralized Domain Adaptation via Knowledge Distillation},
+              author = {Feng, Haozhe and You, Zhaoyang and Chen, Minghao and Zhang, Tianye and Zhu, Minfeng 
+                and Wu, Fei and Wu, Chao and Chen, Wei}, 
+              booktitle = {Proceedings of the 38th International Conference on Machine Learning},
+              pages = {3274--3283}, year = {2021}, editor = {Meila, Marina and Zhang, Tong},
+              volume = {139}, month = {18--24 Jul}, publisher = {PMLR}}
+            ```        
       - layout: left
         title: Interactive Diagnosis System for Federated Learning
         caption: 2021.9 - now
+        teaser: images/fedcare.PNG
         description: | # this will include new lines to allow paragraphs
-            Federated Learning (FL) is a machine learning paradigm where multiple data owners collaboratively train a model under the coordination of a central server while keeping all data decentralized. Such a paradigm allows models to be trained effectively while avoiding data privacy leakage. However, federated learning is vulnerable to various kinds of failures as a result of both intentional (malicious) and none intentional (non-malicious) attacks, e.g., the data poisoning attack and the non-iid problem. In this paper, we propose FedCare, a real-time visual diagnosis approach for handling failures in federated learning systems.
-            
             **Feng HZ\*, Zhang T\*, et al. FedCare: Towards Interactive Diagnosis of Federated Learning Systems (\*First Co-Author, Under Review).**
+
+            Federated Learning (FL) is a machine learning paradigm where multiple data owners collaboratively train a model under the coordination of a central server while keeping all data decentralized.This paradigm allows models to be trained effectively while avoiding data privacy leakage. However, federated learning is vulnerable to various kinds of failures as a result of both intentional (malicious) and none intentional (non-malicious) attacks, e.g., the data poisoning attack and the non-iid problem. In this paper, we propose FedCare, a real-time visual diagnosis approach for **identifying reasons, providing solutions and handling failures** in federated learning systems.
+            
+
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
