@@ -1,46 +1,45 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+repository: FengHZ/cv
+favicon: images/patric.ico
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
-# email_title: Email (Email title override)
-phone: Your phone number (optional)
-# phone_title: Phone (Phone title override)
-website: Your website (eg. https://google.com)(optional)
-# website_title: Web (Website title override)
+name: Haozhe Feng
+title: PhD Candidate in Artificial Intelligence
+email: fenghz@zju.edu.cn
+website: www.fenghz.xyz
 
 # Dark Mode (true/false/never)
 darkmode: false
 
 # Social links
-twitter_username: jekyllrb
-github_username:  jekyll
-stackoverflow_username: "00000001"
-dribbble_username: jekyll
-facebook_username: jekyll
-flickr_username: jekyll
-instagram_username: jekyll
-linkedin_username: jekyll
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-googleplus_username: +jekyll
-orcid_username: 0000-0000-0000-0000
+# twitter_username: facespics
+github_username:  FengHZ
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jameswgrant
+linkedin_username: feng-haozhe-386a96179
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+orcid_username: 0000-0002-5900-356X
 
 # Additional icon links
 additional_links:
-- title: Link name
-  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  url: Link url (eg. https://google.com)
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
+- title: ZhiHu
+  icon: fab fa-zhihu
+  url: https://www.zhihu.com/people/feng-hao-zhe-66
+- title: Google Scholar
+  icon: fab fa-goodreads
+  url: https://scholar.google.com/citations?user=kKOuziEAAAAJ&hl=zh-CN
+# - title: Bilibili
+#   icon: fab fa-youtube
+#   url: 
 
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
@@ -49,72 +48,92 @@ additional_links:
 # google_analytics: "UA-00000000-0"
 
 # About Section
-# about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
+# about_title: About Me
+about_profile_image: images/me.PNG
 about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
-
+  Hi, my name's Haozhe Feng (冯浩哲) and I'm now studying for a PhD in Artificial Intelligence (AI) at State Key Lab of CAD&CG, Zhejiang University. I received my BS degree in Mathematics Statistics from Zhejiang University. My research interest includes: <mark>deep learning</mark>, <mark>representation learning</mark>, <mark>privacy preservation</mark> and <mark>federated learning</mark>.
+  
+  I am looking for work right now.
 content:
-  - title: Projects # Title for the section
+  - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        title: Zhejiang University
+        caption: 2014-2018
+        sub_title: BSc Mathematics & Statistics
         quote: >
-          Short overview of the project (optional)
+          Zhejiang University (ZJU; Chinese: 浙江大学) is a comprehensive national university and a member of the elite C9 League. Founded in 1897, Zhejiang University is one of China's oldest, most selective, and most prestigious institutions of higher education. 
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
-  - title: Experience
-    layout: list
+          During my time at the school of Mathematics, I have learned that although **talent** really matters, diligence, in the final, will work. In this period, I got **The Second Prize Scholarship (2015)**, **Individual Scholarship for Social Activities (2016)**, **The Third Prize Scholarship (2017)**, and **The Outstanding Undergraduate Thesis(2018)**.
+      - layout: left
+        title: Zhejiang University
+        caption: 2018-now
+        sub_title: PhD Candidate in Computer Science
+        description: |
+          After surviving in mathematics and statistics, I transfer to the field of computer science and do some research in Artificial Intelligence. Now I am doing some study on **privacy-preserving techniques** in AI, including **federated learning** and **differential privacy**. I think deep learning is a  landmark achievement and should be treated carefully. AI brings convenience to our life but also causes privacy leakage. My research aims to train good AI models without exposing personal information.
+          
+          In this period, I have got **Academic Scholarship (￥10k, 2018)**, **Award of Honor of Graduate (2019, 2020, 2021)**, **Merit Graduate Student (2021)**, **Chen-Tian-Zhou Scholarship (￥10k, 2021)** and **China National Scholarship (￥30k, top 2%, 2021)**.
+        
+  - title: Projects & Publications # Title for the section
+    layout: list # Type of content section (list/text)
     content:
-      - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
-        quote: >
-          Short description of the company (optional)
+      - layout: left
+        title: Semi-supervised Representation Learning
+        caption: 2020.1 - 2020.9
         description: | # this will include new lines to allow paragraphs
-          Description of role
-  - title: Education
-    layout: list
+            Semi-supervised variational autoencoder can reduce the label cost by training classifiers with multiple unlabeled data and a small fraction of labeled data. However, it encounters the challenge that good ELBO values do not always imply accurate inference results. We propose SHOT-VAE to address this problem. The SHOT-VAE achieves good performance with 25.30% error on CIFAR-100 and 6.11% on CIFAR-10. 
+            
+            **Feng HZ, Kong K, et al. SHOT-VAE: Semi-supervised Deep Generative Models With Label-aware ELBO Approximations (Accepted at AAAI 2021).** [[PDF]](https://arxiv.org/pdf/2011.10684.pdf) [[Code]](https://github.com/FengHZ/AAAI2021-260)
+      
+      - layout: left
+        title: Representation Learning for Basic Visualization Charts
+        caption: 2020.1 - 2021.5
+        description: | # this will include new lines to allow paragraphs
+            Patterns in charts refer to interesting visual features or forms. Existing Methods for identifying patterns in charts require a large number of labeled data instances, making it intractable without user supervision. We propose ChartNavigator, an interactive pattern identification and annotation framework for unlabeled visualization charts. ChartNavigator leverages a novel chart-sensitive deep factor model to map patterns into a low-dimensional factor representation space and facilitates rich analysis with the derived representations. We design and implement a visual interface to support efficient identification and annotation of potential patterns in charts. Evaluations with multiple datasets show that our approach outperforms the baseline models in identifying and annotating patterns.
+            
+            **Zhang T\*, Feng HZ\*, et al. ChartNavigator: An Interactive Pattern Identification and Annotation Framework for Charts (\*First Co-Author, Accepted at IEEE TKDE, CCF-A).** [[PDF]](https://ieeexplore.ieee.org/document/9472937/)
+       
+      - layout: left
+        title: Unsupervised Multi-source Federated Transfer Learning
+        caption: 2020.5 - 2021.5
+        teaser: https://jackie-image.oss-cn-hangzhou.aliyuncs.com/%E5%9B%BE%E7%89%871.png
+        description: | # this will include new lines to allow paragraphs
+            Conventional unsupervised multi-source domain adaptation (UMDA) methods assume all source domains can be accessed directly. However, this assumption neglects the privacy-preserving policy, where all the data and computations must be kept decentralized. To address the decentralized problem, we propose a privacy-preserving UMDA paradigm named Knowledge Distillation based Decentralized Domain Adaptation (KD3A), which performs domain adaptation through the knowledge distillation on models from different source domains. The extensive experiments show that KD3A significantly outperforms state-of-the-art UMDA approaches. Moreover, the KD3A is robust to the negative transfer and brings a 100× reduction of communication cost compared with other decentralized UMDA methods.            
+            **FengHZ, You Z, et al. KD3A: Unsupervised Multi-Source Decentralized Domain Adaptation via Knowledge Distillation. (Accepted at ICML 2021).** [[PDF]](https://arxiv.org/pdf/2011.09757.pdf) [[Code]](https://github.com/FengHZ/KD3A)
+      
+      - layout: left
+        title: Interactive Diagnosis System for Federated Learning
+        caption: 2021.9 - now
+        description: | # this will include new lines to allow paragraphs
+            Federated Learning (FL) is a machine learning paradigm where multiple data owners collaboratively train a model under the coordination of a central server while keeping all data decentralized. Such a paradigm allows models to be trained effectively while avoiding data privacy leakage. However, federated learning is vulnerable to various kinds of failures as a result of both intentional (malicious) and none intentional (non-malicious) attacks, e.g., the data poisoning attack and the non-iid problem. In this paper, we propose FedCare, a real-time visual diagnosis approach for handling failures in federated learning systems.
+            
+            **Feng HZ\*, Zhang T\*, et al. FedCare: Towards Interactive Diagnosis of Federated Learning Systems (\*First Co-Author, Under Review).**
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
     content:
-      - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
-        quote: >
-          Short institution or course description (optional)
+      - layout: left
+        title: Alibaba DAMO Academy
+        sub_title: Research Intern
+        caption: 2020.1 - 2020.5
         description: | # this will include new lines to allow paragraphs
-          Description of qualification
+            I joined the project *Federal Learning Co-construction* and learned some basic concepts with federated learning and privacy-preserving techniques. This experience expires my research on *multi-source federated transfer learning*.
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
-
+      Alongside my interests in AI, some of my other interests and hobbies are:
+      - Violin
+      - Classical Chinese literature & poetry
+      - History
+      - Philosophy(Existentialism,Communism)
+      - Psychology
+      - Tourism & Photography
 # Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
+references_title: www.fenghz.xyz
 
 # Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+theme: modern-resume-theme # (Use this is you are hosting your resume yourself)
 # remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
 
 sass:
